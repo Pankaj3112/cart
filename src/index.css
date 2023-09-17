@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+/* Cart-Item */
+
 .cart-item {
   display: inline-flex;
   margin: 20px 10px;
