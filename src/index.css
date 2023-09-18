@@ -28,3 +28,12 @@ body {
 .action-icons:hover {
   cursor: pointer;
 }
+
+
+/* Cart */
+
+.cart{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+}
