@@ -1,13 +1,13 @@
 import React from "react";
 
 const CartItem = (props) => {
-    const {price, title, qty} = props.product;
+    const {price, title, qty, img} = props.product;
     const {increaseQuantity, decreaseQuantity, deleteProduct, product} = props;
 
     return(
         <div className="cart-item">
             <div className="left-block">
-                <img style={styles.image}/>
+                <img src={img} style={styles.image}/>
             </div>
 
             <div className="right-block">
@@ -45,7 +45,9 @@ const styles = {
         height: 110,
         width: 110,
         borderRadius: 4,
-        background: '#ccc'
+        background: '#ccc',
+        objectPosition: "center",
+        objectFit: "cover"
     }
 }
 

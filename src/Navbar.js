@@ -5,7 +5,10 @@ const Navbar = (props) => {
         <div style={styles.nav}>
             <div style={styles.cartIconContainer}>
                 <i style={styles.cartIcon} className="fa-solid fa-cart-shopping"></i>
-                <span style={styles.cartCount}>{props.count}</span>
+
+                <div style={styles.cartCount}>
+                    <span >{props.count}</span>
+                </div>
             </div>
         </div>
     );
@@ -30,12 +33,15 @@ const styles = {
     cartCount: {
         background: 'yellow',
         borderRadius: '50%',
-        padding: '4px 8px',
         position: 'absolute',
         right: 10,
         top: -15,
-        paddingLeft: 10,
-        paddingRight: 10
+        width: 25,
+        height: 25,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "0px 2px 2px 0px"
     }
 };
 
